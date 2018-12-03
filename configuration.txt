@@ -25,14 +25,13 @@ Plugin 'tpope/vim-fugitive'
 " 传递路径，合理设置运行时路径。 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
-"taglist start
-Plugin 'taglist.vim'
-
-"taglist end
-
 "ctags start
 Plugin 'https://github.com/universal-ctags/ctags.git'
 ""ctags end
+
+"taglist start
+Plugin 'taglist.vim'
+"taglist end
 
 "nerdtree start,file tree
 Plugin 'https://github.com/scrooloose/nerdtree.git'
