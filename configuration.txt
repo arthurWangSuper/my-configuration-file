@@ -1,0 +1,65 @@
+set nocompatible " be iMproved, required
+filetype off " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+" initialize
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin(’~/some/path/here’)
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+"下面是三种实例方式安装插件
+
+"从github安装，作者名/插件名称 github仓库
+Plugin 'tpope/vim-fugitive'
+"
+" 从vim-scripts安装的，直接使用插件名
+" Plugin ‘L9’
+" 没有托管在github的插件，使用git全地址
+" Plugin ‘git://git.wincent.com/command-t.git’
+
+" 本地插件，比如自己编写的插件
+" Plugin ‘file:///home/gmarik/path/to/plugin’
+" 传递路径，合理设置运行时路径。 
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+"taglist start
+Plugin 'taglist.vim'
+
+"taglist end
+
+"ctags start
+Plugin 'https://github.com/universal-ctags/ctags.git'
+""ctags end
+
+"nerdtree start,file tree
+Plugin 'https://github.com/scrooloose/nerdtree.git'
+""nerdtree end
+"youcompleteme start
+"Plugin ‘https://github.com/Valloric/YouCompleteMe.git’
+"youcompleteme end
+"
+""ctrlp start,find file
+Plugin 'https://github.com/kien/ctrlp.vim'
+"ctrlp end
+""NerdCommenter start
+Plugin 'https://github.com/scrooloose/nerdcommenter.git'
+"NerdCommenter end
+
+" All of your Plugins must be added before the following line
+call vundle#end() " required
+filetype plugin indent on " required
+"filetype plugin on
+""
+" Brief help
+" " :PluginList       - lists configured plugins
+" " :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" " :PluginClean      - confirms removal of unused plugins; append `!` to
+" auto-approve removal
+" "
+" " see :h vundle for more details or wiki for FAQ
+" " Put your non-Plugin stuff after this line
